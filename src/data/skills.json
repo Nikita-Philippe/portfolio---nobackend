@@ -1,0 +1,173 @@
+[
+    {
+        "lang": "HTML",
+        "img": "./assets/logos/html.svg",
+        "rating": 3,
+        "desc": [
+            "5 ans d'HTML",
+            "HTML appris/utilisé académique, personnel et professionel",
+            "~10 projets utilisants HTML"
+        ]
+    },
+    {
+        "lang": "CSS / SASS",
+        "img": "./assets/logos/sass.svg",
+        "rating": 3,
+        "desc": [
+            "5 ans de CSS",
+            "CSS appris/utilisé académique, personnel et professionel",
+            "~10 projets utilisants CSS"
+        ]
+    },
+    {
+        "lang": "JavaScript",
+        "img": "./assets/logos/js.svg",
+        "rating": 3,
+        "desc": [
+            "4 ans de JavaScript",
+            "JavaScript appris/utilisé académique, personnel et professionel",
+            "Javascript utilisé avec NodeJS, VueJS, Vite, jQuery, Sveltekit, Materialize, etc...",
+            "Environ 6 projets avec JavaScript, comme ce site web"
+        ]
+    },
+    {
+        "lang": "PHP",
+        "img": "./assets/logos/php.svg",
+        "rating": 2,
+        "desc": [
+            "4 ans de PHP",
+            "PHP appris/utilisé académique, personnel et professionel",
+            "Découverte du PHP pendant mon stage à SoyHuCe",
+            "Environ 5 projets avec PHP, surtout avec WordPress"
+        ]
+    },
+    {
+        "lang": "C / C# / C++",
+        "img": "./assets/logos/c.svg",
+        "rating": 1,
+        "desc": [
+            "2 ans de C",
+            "C appris/utilisé académique",
+            "Quelques projets, surtout pour mes études",
+            "C++ utilisé avec Arduino"
+        ]
+    },
+    {
+        "lang": "Java",
+        "img": "./assets/logos/java.svg",
+        "rating": 2,
+        "desc": [
+            "2 ans de Java",
+            "Java appris/utilisé académique",
+            "~4 projets utilisants Java",
+            "Création d'un jeu en Java et d'une appli mobile avec Android Studio"
+        ]
+    },
+    {
+        "lang": "Python",
+        "img": "./assets/logos/python.svg",
+        "rating": 3,
+        "desc": [
+            "4 ans de Python",
+            "Java appris/utilisé personnel et académique",
+            "Quelques projets et nombreux scripts, notamment le projet CCV"
+        ]
+    },
+    {
+        "lang": "Bash",
+        "img": "./assets/logos/bash.svg",
+        "rating": 1,
+        "desc": [
+            "2 ans de Bash",
+            "Bash appris/utilisé personnel et académique"
+        ]
+    },
+    {
+        "lang": "SQL / NoSQL",
+        "img": "./assets/logos/sql.svg",
+        "rating": 3,
+        "desc": [
+            "5 ans d'utilisation de bases de données SQL ou NoSQL",
+            "SQL appris/utilisé personnel et académique, NOSQL appris/utilisé personnel et professionel",
+            "Utilisation de MySQL, MariaDB, MongoDB, Prisma, etc..."
+        ]
+    },
+    {
+        "lang": "Git",
+        "img": "./assets/logos/github.svg",
+        "rating": 3,
+        "desc": [
+            "5 ans d'utilisation de Git",
+            "Git appris en personnel et académique, utilisé personnel, académique et professionel",
+            "Tout mes projets utilisent Git pour le versionning",
+            "Utilisation de GitHub, GitLab, BitBucket, GitKraken, etc..."
+        ]
+    },
+    {
+        "lang": "Docker",
+        "img": "./assets/logos/docker.svg",
+        "rating": 2,
+        "desc": [
+            "2 ans de Docker",
+            "Docker appris en personnel et pro, utilisé surtout en pro.",
+            "Utilisé personnellement avec Portainer et Docker-Compose pour mon home serveur PiKniK"
+        ]
+    },
+    {
+        "lang": "Arduino",
+        "img": "./assets/logos/arduino.svg",
+        "rating": 2,
+        "desc": [
+            "5 ans d'Arduino",
+            "C++ appris/utilisé personnellement, un peu au lycée",
+            "Beaucoup de projets, surtout pour personnels"
+        ]
+    },
+    {
+        "lang": "Raspberry",
+        "img": "./assets/logos/rpi.svg",
+        "rating": 2,
+        "desc": [
+            "Utilsation du raspberry pour des projets personnels",
+            "Quelques projets, comme mon serveur PiKniK ou mon instance Octoprint"
+        ]
+    },
+    {
+        "lang": "Linux / Windows",
+        "img": "./assets/logos/os.svg",
+        "rating": 3,
+        "desc": [
+            "5 ans de Linux.",
+            "Linux appris en personnel et académique, utilisé personnel, académique et professionel",
+            "Maitrise des commandes Linux, de la configuration de serveur, de la sécurité, etc...",
+            "Maitrise des outils Windows/Microsoft, comme Office, Visual Studio, etc..."
+        ]
+    },
+    {
+        "lang": "IDEs",
+        "img": "./assets/logos/ide.svg",
+        "rating": 3,
+        "desc": [
+            "utilisation principale de VSCode, mais aussi de WebStorm, IntelliJ, Eclipse, etc... selon les languages utilisés"
+        ]
+    },
+    {
+        "lang": "CAD / ECAD",
+        "img": "./assets/logos/cad.svg",
+        "rating": 3,
+        "desc": [
+            "Appris en perso et utilisé pour mes projets, comme PCFx",
+            "Utilisation principale de Fusion 360 pour la conception de pièces mécaniques",
+            "Rares utilisations de OpenScad, FreeCAD, ou SolidWorks etc...",
+            "Utilisation de KiCad pour la réalisation de PCB"
+        ]
+    },
+    {
+        "lang": "Misc",
+        "img": "./assets/logos/misc.svg",
+        "rating": 3,
+        "desc": [
+            "Maitrise générale des outils d'editing Adobe"
+        ]
+    }
+]

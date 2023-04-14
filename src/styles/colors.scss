@@ -1,0 +1,81 @@
+:root {
+    --test: rgb(87, 255, 205);
+
+    // Base
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #a9a9a9;
+    --lightgrey: #f0f0f0;
+
+    // Accents
+    --accentcolor: #87c25f;
+    --accentcolor-darken: #73a551;
+    //#646cff
+    --strong-accent: #ffe86f;
+
+    // Backgrounds
+    --background: #111111;
+    --darker-background: #0f0f0f;
+    --background-opacity: #1b1b1bc9; // mod
+
+    // Text colors
+    --txt-primary: var(--white);
+    --txt-grey: var(--grey);
+    --txt-secondary: var(--black);
+    --link-txt-color: var(--accentcolor);
+    --link-txt-color-hover: ar(--accentcolor-darken);
+
+    // Skills
+    --skill-good: #7ec9c4;
+    --skill-medium: #809cff;
+    --skill-bad: #a98aff;
+
+    // Spinner
+    --spinner-accent: var(--accentcolor);
+    --spinner-accent-opacity: #87c25f30; // mod
+    --spinner-background: var(--background);
+
+    // Filters
+    --filters: #a0cf1c;
+    --filters-borders: #7e7a7a;
+    --filters-active: var(--white);
+
+    // Titles
+    --accentcolor-transparent: #87c25f3e; // mod
+    --grey-transparent: #a9a9a93e; // mod
+
+    // Terminal dark
+    --terminal-dark-background: var(--background);
+    --terminal-dark-background-opacity: var(--background-opacity);
+
+    --terminal-dark-txt-color: #cccccc;
+    --terminal-dark-pwd-color: #eb8e72;
+    --terminal-command-color: #7ec9c4;
+    --terminal-command-color-hover: #63a39f;
+    --terminal-pwd: #3ece1a;
+
+    // Terminal light
+    --terminal-light-txt-color: var(--darker-background);
+    --terminal-light-background: #ffffff;
+    --terminal-light-background-opacity: #ffffffce; // mod
+    --terminal-light-pwd-color: #993010;
+
+    &.light-mode {
+        --background: #ffffff;
+        --darker-background: #cfcfcf;
+        --background-opacity: #ffffffce; // mod
+
+        // Text colors
+        --txt-primary: #000000;
+        --txt-secondary: #ffffff;
+
+        --filters-active: #000000;
+
+        --spinner-background: var(--background);
+
+        .single-pro:hover .content-container {
+            background-color: var(--black) !important;
+            border-bottom: 4px solid var(--white) !important;
+        }
+    }
+}

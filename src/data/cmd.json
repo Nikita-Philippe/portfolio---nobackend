@@ -1,0 +1,413 @@
+[
+    {
+        "id": "1",
+        "cmd": "help",
+        "desc": "Afficher toutes les commandes",
+        "rank": "2",
+        "content": "cmd_help"
+    },
+    {
+        "id": "2",
+        "cmd": "about",
+        "desc": "A propos de moi",
+        "rank": "1",
+        "content": "Salut, moi c'est Nikita 👋.\n J'ai 20 ans et je passioné de technologies tels que la programmation, l'électronique, l'impression et le design 3d, le drone...\nSur ce site vous pourrez donc retrouver la plupart de mes projets, avec toutes mes infos."
+    },
+    {
+        "id": "3",
+        "cmd": "projects",
+        "desc": "Voir mes projets",
+        "rank": "1",
+        "content": "projects"
+    },
+    {
+        "id": "4",
+        "cmd": "exp",
+        "desc": "Mes expériences professionnelles",
+        "rank": "1",
+        "content": "Alternance chez Geoclic Solutions 2021-2022\n· Alternance au sein de Géoclic Solutions dans le cadre de ma 2eme année de DUT Informatique\n· Poste de développeur et support technique (gestion et amélioration d’une application existantes JS, tests Mocha, refonte du site web de l’entreprise)\nStage SoyHuCe 2019· Stage personnellement motivé au sein de l’entreprise SoyHuCe\n· Poste de développeur backend (gestion base de données, développement Application) – PHP"
+    },
+    {
+        "id": "5",
+        "cmd": "forma",
+        "desc": "Mes formations et certifications",
+        "rank": "1",
+        "content": "TOEFL 2023\n· Obtention du TOEFL 10/12 - niveau C1\nDUT Informatique 2020-2022\n· Obtention de mon DUT Informatique à l'IUT de Nantes\nBaccalauréat STI2D 2019\n· Bac STI2D spécialité SIN mention très bien à Saint-Nazaire"
+    },
+    {
+        "id": "6",
+        "cmd": "skills",
+        "desc": "Mes compétences",
+        "rank": "1",
+        "content": "Langages Javascript (Node, Vue, Vite, Svelte), HTML/SCSS, PHP, SQL/NoSQL, Java, Python, C/C++...\nOutils Linux/Windows, Git, Docker, VsCode/JetBrains, Raspberry, CAD/ECAD"
+    },
+    {
+        "id": "7",
+        "cmd": "infos",
+        "desc": "Retrouver mes coordonnées et mon CV complet sous PDF",
+        "rank": "1",
+        "content": "infos"
+    },
+    {
+        "id": "8",
+        "cmd": "links",
+        "desc": "Afficher les liens vers mes réseaux",
+        "rank": "2",
+        "content": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/Nikita-Philippe",
+                "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 496 512'><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d='M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z'/></svg>"
+            },
+            {
+                "name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/nikita-philippe-26706619b/",
+                "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d='M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z'/></svg>"
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "cmd": "menu",
+        "desc": "Afficher le menu de navigation",
+        "rank": "2",
+        "content": "cmd_menu"
+    },
+    {
+        "id": "10",
+        "cmd": "theme",
+        "desc": "basculer le theme",
+        "rank": "2",
+        "content": "cmd_theme"
+    },
+    {
+        "id": "11",
+        "cmd": "time",
+        "desc": "afficher la date et l'heure",
+        "rank": "2",
+        "content": "cmd_time"
+    },
+    {
+        "id": "12",
+        "cmd": "clear",
+        "desc": "Nettoyer le terminal",
+        "rank": "2",
+        "content": "cmd_clear"
+    },
+    {
+        "id": "13",
+        "cmd": "exit",
+        "desc": "Quitter le terminal",
+        "rank": "2",
+        "content": "cmd_exit"
+    },
+    {
+        "id": "14",
+        "cmd": "npm run portfolio",
+        "desc": "Initialise le portfolio",
+        "rank": "1",
+        "initial": true,
+        "content": [
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Installing dependencies..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Compiling TypeScript files..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Running linter..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Running tests..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Building production assets..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Creating deployment package..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Starting development server..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Initializing Git repository..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Creating production build..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Updating dependencies..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Cleaning up build artifacts..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Building CSS files..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Transpiling ES6 to ES5..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Running code quality checks..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Deploying application to server..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Generating documentation..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Analyzing bundle size..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Packaging application for distribution..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Optimizing images..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Configuring environment variables..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Running security audits..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Checking for outdated dependencies..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Creating unit test coverage report..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Running end-to-end tests..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Bundling client-side code..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Compiling SCSS files..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Generating API documentation..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Migrating database schema..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Generating release notes..."
+            },
+            {
+                "speed": "speed-quick",
+                "error": false,
+                "text": "Deploying to staging environment..."
+            },
+            {
+                "delay": "delay-two",
+                "error": false,
+                "clear": true,
+                "text": "Done."
+            },
+            {
+                "delay": "delay-one",
+                "speed": "speed-none",
+                "error": false,
+                "type": "ascii",
+                "id": "1"
+            },
+            {
+                "error": false,
+                "size": "font-large",
+                "text": "Salut, moi c'est Nikita 👋"
+            },
+            {
+                "error": false,
+                "size": "font-medium",
+                "text": "J'ai 20 ans et je passioné de technologies tels que la programmation, l'électronique, l'impression et le design 3d, le drone...\n\nSur ce site vous pourrez donc retrouver la plupart de mes projets, avec toutes mes infos."
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "cmd": "cmd_menu",
+        "desc": "Menu de navigation",
+        "rank": "1",
+        "content": [
+            {
+                "title": "Expériences professionnelles 🖊️",
+                "content": [
+                    {
+                        "text": [
+                            {
+                                "type": "title",
+                                "text": "Alternance chez Géoclic Solutions"
+                            },
+                            {
+                                "type": "date",
+                                "text": "2021-2022"
+                            },
+                            {
+                                "type": "text",
+                                "text": "· Alternance au sein de Géoclic Solutions 🌐 dans le cadre de ma 2eme année de DUT Informatique\n· Poste de développeur et support technique. Travaux sur la plateforme Géoclic sous Node/Vuejs, dev testing Mocha, refonte totale du site web sous WP)"
+                            }
+                        ]
+                    },
+                    {
+                        "text": [
+                            {
+                                "type": "title",
+                                "text": "Stage chez SoyHuCe"
+                            },
+                            {
+                                "type": "date",
+                                "text": "2019"
+                            },
+                            {
+                                "type": "text",
+                                "text": "· Stage personnellement motivé chez SoyHuCe Caen\n· Poste de développement backend. Gestion base de données, développement applications sous Laravel (PHP)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Formations 🎓",
+                "content": [
+                    {
+                        "text": [
+                            {
+                                "type": "title",
+                                "text": "DUT Informatique"
+                            },
+                            {
+                                "type": "date",
+                                "text": "2022"
+                            },
+                            {
+                                "type": "text",
+                                "text": "· Obtention de mon DUT Informatique à l’IUT de Nantes"
+                            }
+                        ]
+                    },
+                    {
+                        "text": [
+                            {
+                                "type": "title",
+                                "text": "Baccalauréat STI2D"
+                            },
+                            {
+                                "type": "date",
+                                "text": "2019"
+                            },
+                            {
+                                "type": "text",
+                                "text": "· Obtention du baccalauréat STI2D mention très bien au lycée Aristide Briand"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Compétences 🧠",
+                "content": [
+                    {
+                        "text": [
+                            {
+                                "type": "title",
+                                "text": "Langages"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Javascript (Node, Vue, Vite, Svelte), HTML/SCSS, PHP, SQL/NoSQL, Java, Python, C/C++..."
+                            }
+                        ]
+                    },
+                    {
+                        "text": [
+                            {
+                                "type": "title",
+                                "text": "Outils"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Linux/Windows, Visual Studio/suite JetBrains, Git, Docker, Arduino/Raspberry, suite Office/Adobe, CAD, ECAD"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Mes projets 📱",
+                "content": {
+                    "type": "link",
+                    "link": "projets",
+                    "text": "Mes projets"
+                }
+            },
+            {
+                "title": "Mon CV complet 📰",
+                "content": {
+                    "type": "link",
+                    "link": "infos",
+                    "text": "Mes infos"
+                }
+            }
+        ]
+    }
+]

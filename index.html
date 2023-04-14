@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logoTemp.jpg" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Retrouvez mes derniers projets et mes infos sur mon portfolio !" />
+    <meta name="author" content="Nikita PHILIPPE" />
+    <meta name="robots" content="index,follow" />
+
+    <meta propety="og:image" content="/src/assets/logo/logoTemp.jpg" />
+    <meta property="og:description" content="Retrouvez mes derniers projets et mes infos sur mon portfolio !" />
+    <meta property="og:title" content="Nikita PHILIPPE" />
+    <meta property="og:type" content="website" />
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
+
+    <title>NP</title>
+
+    <script type="text/javascript">
+      "IntersectionObserver" in window
+        ? ((window.dark = JSON.parse(window.localStorage.getItem("dark_theme"))),
+          null === window.dark
+            ? (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? (window.dark = !0) : (window.dark = !1),
+              localStorage.setItem("dark_theme", JSON.stringify(window.dark)))
+            : !0 === window.dark && document.documentElement.classList.remove("light-mode"))
+        : document.documentElement.classList.add(" ie");
+    </script>
+
+    <style type="text/css" class="loading-screen-css">
+      .loading-screen {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        opacity: 1;
+        background-color: #111111;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: all 1s ease;
+      }
+      .loading-screen .spinner {
+        width: 44px;
+        height: 44px;
+        animation: spinner-y0fdc1 2s infinite ease;
+        transform-style: preserve-3d;
+      }
+
+      .loading-screen .spinner > div {
+        background-color: #87c25f30;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        border: 2px solid #87c25f;
+      }
+
+      .loading-screen .spinner div:nth-of-type(1) {
+        transform: translateZ(-22px) rotateY(180deg);
+      }
+
+      .loading-screen .spinner div:nth-of-type(2) {
+        transform: rotateY(-270deg) translateX(50%);
+        transform-origin: top right;
+      }
+
+      .loading-screen .spinner div:nth-of-type(3) {
+        transform: rotateY(270deg) translateX(-50%);
+        transform-origin: center left;
+      }
+
+      .loading-screen .spinner div:nth-of-type(4) {
+        transform: rotateX(90deg) translateY(-50%);
+        transform-origin: top center;
+      }
+
+      .loading-screen .spinner div:nth-of-type(5) {
+        transform: rotateX(-90deg) translateY(50%);
+        transform-origin: bottom center;
+      }
+
+      .loading-screen .spinner div:nth-of-type(6) {
+        transform: translateZ(22px);
+      }
+
+      @keyframes spinner-y0fdc1 {
+        0% {
+          transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+        }
+
+        50% {
+          transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+        }
+
+        100% {
+          transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+        }
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <div id="app">
+      <div class="loading-screen">
+        <div class="spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <object id="cursor" style="visibility: hidden" class="cursor-wrapper" width="58" height="58">
+      <svg class="cursor-svg default" xmlns="http://www.w3.org/2000/svg" height="58" width="58" viewBox="0 0 58 58">
+        <g class="cursor-path">
+          <circle cx="29" cy="29" r="8.5"></circle>
+        </g>
+      </svg>
+      <svg class="cursor-svg move" style="visibility: hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path
+          class="cursor-path"
+          d="M278.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-64 64c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8h32v96H128V192c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9l-64 64c-12.5 12.5-12.5 32.8 0 45.3l64 64c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V288h96v96H192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l64 64c12.5 12.5 32.8 12.5 45.3 0l64-64c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8H288V288h96v32c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l64-64c12.5-12.5 12.5-32.8 0-45.3l-64-64c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6v32H288V128h32c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-64-64z"
+        />
+      </svg>
+      <svg class="cursor-svg fs" style="visibility: hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path
+          class="cursor-path"
+          d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+        />
+      </svg>
+    </object>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
