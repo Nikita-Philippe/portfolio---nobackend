@@ -1,6 +1,8 @@
 import { store_modal } from "../lib/stores";
 import { htmlToElem } from "./HTML";
 
+import { marked } from "marked";
+
 store_modal.subscribe(async (value) => {
   if (!value) return;
 
@@ -13,6 +15,7 @@ store_modal.subscribe(async (value) => {
     htmlToElem(`<aside class="simple-modal fullpage ${value.terms ? "terms" : ""}"><p class="simple-modal__content">${msg}</p></aside>`).then((el) => {
       el = document.body.appendChild(el);
 
+      window.scrollTo(0, 0);
       el.addEventListener("click", () => {
         el.style.opacity = "0";
         el.addEventListener("transitionend", () => el.remove(), { once: true });
@@ -51,6 +54,6 @@ function checkSingleModal() {
 
 async function getTerms() {
   // @ts-ignore
-  const terms = await import("../data/terms.md");
-  return terms.html
+  const rawTerms = await import.meta.glob('../data/terms.md', { as: 'raw' })['../data/terms.md']()
+  return marked.parse(rawTerms);
 }
