@@ -22,19 +22,24 @@ export function normalizeTags(tags) {
 
 export function updateFilterTag(event, tag) {
   const el = event.target;
+  Array.from(document.querySelectorAll(".project_active")).forEach((el) => {
+    el.classList.remove("project_active");
+  });
 
   if (!el.classList.contains("tag-active")) {
     store_tags.update((tags) => [...tags, tag]);
+    el.classList.add("tag-active");
     updateTagsClasses(tag, "add");
-    return el.classList.add("tag-active");
   } else {
     store_tags.update((tags) => tags.filter((t) => t !== tag));
+
+    el.classList.remove("tag-active");
     updateTagsClasses(tag, "del");
-    return el.classList.remove("tag-active");
   }
 }
 
 function updateTagsClasses(tag, action) {
+  setTimeout(() => {
   const els = document.querySelectorAll(".single-filter");
   els.forEach((el) => {
     // @ts-ignore
@@ -42,5 +47,8 @@ function updateTagsClasses(tag, action) {
       if (action === "add") el.classList.add("tag-active");
       else el.classList.remove("tag-active");
     }
+    // @ts-ignore
+    document.querySelectorAll(".single-project").forEach((el) => (el.style.opacity = "1"));
   });
+  }, 10);
 }

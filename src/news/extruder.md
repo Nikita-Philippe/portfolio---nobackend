@@ -4,7 +4,7 @@ description: Extrudeur complet sur base sherpa pour Ender 3
 tags:
   - "3D"
   - "CAD"
-img: (./assets/extruder/extruder.png "PCFx")
+img: /assets/extruder/extruder.png
 ---
 
 **Projet en développement; cet article est donc probablement incomplet**
@@ -48,11 +48,10 @@ J'ai donc désigné ceci :
 ![V4 de l'extrudeur](./assets/extruder/v4/v4-cad.png "V4 de l'extrudeur")
 
 Et le design fonctionnait bien ! Le système de hotend interchangeable était parfaitement fonctionnel et le tout était très efficace.
-<span class="gallery">
-![Systeme de hotend interchangeable!](./assets/extruder/v4/v4-hotend.gif "Systeme de hotend interchangeable")
+<!-- <span class="gallery"> -->
 ![Système monté 1!](./assets/extruder/v4/v4-1.jpg "Système monté 1")
 ![Système monté 2!](./assets/extruder/v4/v4-2.jpg "Système monté 2")
-</span>
+<!-- </span> -->
 
 Malheuresement j'ai souligné quelques points qui empechait toute utilisation quotidienne de ce système:
 - Le chariot imprimé en 3D, malgré avoir été épaissit et imprimé en PETG, n'était absolument pas rigide. Il y a tant de forces sur le chariot que le tout était légerement flexible et donc inutilisable sur le long terme.

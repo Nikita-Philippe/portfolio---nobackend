@@ -2,7 +2,6 @@ import { defineConfig } from "vite";
 
 import { svelte } from "@sveltejs/vite-plugin-svelte";
 import sveltePreprocess from "svelte-preprocess";
-import { plugin as markdown } from "vite-plugin-markdown";
 
 import * as dotenv from "dotenv";
 
@@ -15,8 +14,7 @@ export default defineConfig({
       css: (css) => {
         css.write("public/bundle.css");
       },
-    }),
-    markdown({ mode: ["html"] }),
+    })
   ],
   server: {
     proxy: {

@@ -3,39 +3,46 @@
 
   import { updateFilterTag } from "../utils/tags";
 
-  import { customizeHTML, getArticleSize } from "../utils/HTML";
+  import { getArticleSize } from "../utils/projects";
 
   import { getRandomInt } from "../utils/misc";
 
-  afterUpdate(() => {
-    customizeHTML(root);
-    if (!container) container = document.querySelector(".project-groupset__content");
+  import { getParsedProject, customizeHTML } from "../utils/projects";
 
+  afterUpdate(() => {
+    if (!container) container = document.querySelector(".project-groupset__content");
+    
+    // disable other active projects
     Array.from(container.querySelectorAll(".project_active")).forEach((el) => {
       el !== root && el.classList.remove("project_active");
     });
 
-    if (root.classList.contains("project_active")) {
-      // @ts-ignore
+    if (project_active) {
       container.querySelectorAll(".single-project:not(.project_active)").forEach((el) => (el.style.opacity = "0"));
-      // @ts-ignore
-      root.addEventListener("transitionend", () => (container.style.height = root.offsetHeight + "px"));
-    } else {
-      // @ts-ignore
+
+      root.addEventListener("transitionend", () => {container.style.height = root.offsetHeight + "px"
+      root.querySelector(".article-content").style.opacity = "1"
+    });
+    } 
+    else {
       container.querySelectorAll(".single-project").forEach((el) => (el.style.opacity = "1"));
-      // @ts-ignore
-      root.addEventListener("transitionend", () => (container.style.height = container.getAttribute("data-baseHeight")));
+      root.addEventListener("transitionend", () => {container.style.height = container.getAttribute("data-baseHeight")
+    });
     }
   });
 
-  export let content;
+  export let id, metadata;
 
-  let container
+  let container 
 
   let root, size;
   let project_active = false;
+  let loadProject = false;
 
-  content.attributes.img.match(/\.\/(.*?)\s/) ? (content.attributes.img = content.attributes.img.match(/\.\/(.*?)\s/)[1]) : content.attributes.img;
+  function activeProject(node) {
+    customizeHTML(node)
+    project_active = true;
+  }
 </script>
 
 <article
@@ -43,12 +50,10 @@
   class="single-project hover-target grid__item {getArticleSize().join(' ')}"
   class:project_active
   class:size
-  style="transition: all {getRandomInt(0.5, 3, 0.5)}s ease-in-out;"
-  use:customizeHTML
 >
   <section class="article-header hover-target">
     <nav class="tags-nav tags-single-article">
-      {#each content.attributes.tags as tag}
+      {#each metadata.tags as tag}
         <button
           class="single-filter hover-target"
           on:click={(e) => {
@@ -61,17 +66,19 @@
     <section
       class="article-header-content hover-target"
       on:click={() => {
-        return (project_active = !project_active);
+        if(loadProject) project_active = !project_active
+        else 
+          loadProject = true
       }}
-      on:keypress={(e) => e.key === "Enter" && (project_active = !project_active)}
+      on:keypress={(e) => e.key === "Enter" && (loadProject = !loadProject)}
     >
       <div class="main-img">
-        <img src={content.attributes.img} alt="" />
+        <img src={metadata.img} alt="" />
       </div>
       <div class="main-content">
         <div class="article-title">
-          <h1>{content.attributes.title}</h1>
-          <p>{content.attributes.description}</p>
+          <h1>{metadata.title}</h1>
+          <p>{metadata.description}</p>
         </div>
         <figure class="open-project">
           <svg class="open-project-icon" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,19 +91,31 @@
     </section>
   </section>
 
-  <section class="article-content">
-    {@html content.html}
-  </section>
+  {#if loadProject}
+    {#await getParsedProject(id)}
+      <section class="article-content loading">
+            <h1>Loading...</h1>
+      </section>
+    {:then {parsedContent, initial}}
+    <section use:activeProject class="article-content">
+      {@html parsedContent}
+    </section>
+    {/await}
+  {/if}
+
 </article>
 
 <style lang="scss">
   .single-project {
     position: absolute;
 
+    $project-transition: 0.5s ease-in-out;
+
+    transition: width $project-transition, height $project-transition, top $project-transition, left $project-transition;
+
     .article-content {
       display: none;
       opacity: 0;
-      transform: translateX(-100%);
     }
 
     .article-header {
@@ -117,11 +136,13 @@
 
         background-size: cover;
 
+        // TODO
         &:hover {
           .main-img {
             img {
               filter: brightness(0.8);
-              transform: scale(1.05);
+              -webkit-transform: translate3d(0,0,0);
+              transform: perspective(1px) scale(1.2);
             }
           }
         }
@@ -138,7 +159,9 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            image-rendering: -webkit-optimize-contrast;
 
+            //will-change: transform;
             transition: filter 0.2s ease-in-out, transform 0.2s ease-in-out;
             filter: brightness(0.6);
             transform: scale(1);
@@ -210,23 +233,9 @@
     }
   }
 
-  @keyframes slide-in {
-    from {
-      display: none;
-      opacity: 0;
-      transform: translateX(-100%);
-    }
-    to {
-      display: block;
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
   .single-project.project_active {
     width: 100% !important;
-    max-width: 1000px !important;
-    height: fit-content !important;
+    height: fit-content;
 
     display: flex;
     flex-direction: column;
@@ -244,8 +253,6 @@
     .article-content {
       display: block;
       opacity: 1;
-      transform: translateX(0);
-      animation: slide-in 0.3s ease-in-out;
 
       width: 100%;
 

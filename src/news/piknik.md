@@ -6,7 +6,7 @@ tags:
   - "info"
   - "CAD"
   - "3D"
-img: (./assets/piknik/piknik.jpg "PCFx")
+img: /assets/piknik/piknik.jpg
 ---
 
 **Projet en développement; cet article est donc probablement incomplet**

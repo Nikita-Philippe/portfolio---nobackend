@@ -4,7 +4,7 @@ description: 'Autre projets'
 tags:
   - "pro"
   - "Wordpress"
-img: (./assets/default/default.jpg "CCV")
+img: /assets/default/default.png
 ---
 
 ## Pain Contre La Faim

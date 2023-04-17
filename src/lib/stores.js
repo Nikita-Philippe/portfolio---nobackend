@@ -4,7 +4,7 @@ export const store_tags = writable([]);
 export const store_projects = writable([{}]);
 export const store_filtered = derived([store_projects, store_tags], ([$projects, $tags]) => {
   if ($tags.length === 0) return $projects;
-  else return $projects.filter((project) => project.attributes.tags.some((tag) => $tags.includes(tag)));
+  else return $projects.filter((project) => project.metadata.tags.some((tag) => $tags.includes(tag)));
 });
 
 // store_filtered.subscribe((value) => {

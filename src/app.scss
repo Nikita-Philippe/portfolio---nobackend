@@ -165,13 +165,14 @@ p {
     }
   }
 
-  .single-filter:hover .single-filter__top {
-    transform: translateY(-0.33em);
-  }
+  // TODO
+  // .single-filter:hover .single-filter__top {
+  //   transform: translateY(-0.33em);
+  // }
 
-  .single-filter:active .single-filter__top {
-    transform: translateY(0);
-  }
+  // .single-filter:active .single-filter__top {
+  //   transform: translateY(0);
+  // }
 
   .single-filter.tag-active {
     background-color: var(--filters-active);

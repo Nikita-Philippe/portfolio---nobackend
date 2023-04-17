@@ -5,7 +5,7 @@ tags:
   - "info"
   - "3D"
   - "CAD"
-img: (./assets/pcfx/PCFxV2.png "PCFx")
+img: /assets/pcfx/PCFxV2.png
 ---
 
 Début 2021, je me suis pris de passion pour le [subreddit SFFPC](https://www.reddit.com/r/sffpc/).

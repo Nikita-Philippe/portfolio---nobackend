@@ -3,7 +3,7 @@ title: CCv
 description: '"Comment ça va ?", tous les matins.'
 tags:
   - "flutter"
-img: (./assets/ccv/ccv_default.jpg "CCV")
+img: /assets/ccv/ccv_default.jpg
 ---
 
 **Projet en développement; cet article est donc probablement incomplet**

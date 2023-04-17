@@ -5,7 +5,7 @@ tags:
   - "code"
   - "JS"
   - "Svelte"
-img: (./assets/portfolio/homebg.png "Portfolio")
+img: /assets/portfolio/homebg.png
 ---
 
 **Projet en développement; cet article est donc probablement incomplet**

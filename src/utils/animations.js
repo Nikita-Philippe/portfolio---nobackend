@@ -4,12 +4,19 @@ import { CustomEase } from "gsap/CustomEase";
 export function initAnimations() {
   miscGSAPEffects();
   registerAllSkillsRelatedAnimations();
+  registerAllProjectsRelatedAnimations();
 }
 
 function registerAllSkillsRelatedAnimations() {
   skillFloat(20, { min: 3, max: 7, step: 1 });
   skillToHover();
   skillFromHover();
+}
+
+function registerAllProjectsRelatedAnimations() {
+  projectAppearing();
+  openProject();
+  closeProject();
 }
 
 function skillFloat(aroundPos, delay) {
@@ -63,9 +70,49 @@ function skillFromHover() {
   });
 }
 
-
-
-function miscGSAPEffects(){
+function miscGSAPEffects() {
   gsap.registerPlugin(CustomEase);
   CustomEase.create("easeInOut", "M0,0 C0.4,0 0.6,1 1,1");
+}
+
+function projectAppearing() {
+  gsap.registerEffect({
+    name: "projectAppearing",
+    effect: (targets, config) => {
+      return gsap.from(targets, {
+        x: Math.random() < 0.5 ? "-110vw" : "110vw",
+        duration: gsap.utils.random(2, 4, 0.5),
+        ease: "power2.out",
+      });
+    },
+
+  });
+}
+
+function openProject() {
+  gsap.registerEffect({
+    name: "openProject",
+    effect: (targets, config) => {
+      return gsap.to(targets, {
+        width: "100%",
+        height: "fit-content",
+        duration: 0.5,
+        ease: "power2.out",
+      });
+    },
+  });
+}
+
+function closeProject(){
+  gsap.registerEffect({
+    name: "closeProject",
+    effect: (targets, config) => {
+      return gsap.to(targets, {
+        width: "auto",
+        height: "auto",
+        duration: 0.5,
+        ease: "power2.out",
+      });
+    },
+  });
 }
